@@ -1,0 +1,46 @@
+body {
+	font-family: sans-serif; /*tipo de letra*/
+}
+
+ul {
+	/*outline: 1px solid yellow; se dibuja un cortorne alrededor de la etiqueta (ayuda visual)*/
+  	list-style: none;/*quita las viñetas*/
+	margin: 0;
+	padding: 0; /*evitar los espacios*/
+	width: 200px; /*sea pequeño el recuardo*/
+	line-height: 24px;/*agrega espacio horizontal*/
+}
+
+li {
+	background: gray; /*da color de fondo*/
+}
+/*estados de los enlaces: link, Visited, hover, Active. LovE/HAte para usar los cuatro*/
+a {	/*etiqueta inline solo ocupa el tamaño de su contenido*/
+	display: block;/*para que ocupe el total del espacio, cambia su naturaleza a blocke*/
+	text-decoration: none;/*sacar subrayado*/
+	color: black; /*cambia color de la letras*/
+	padding-left: 8px; /*espacio vertical*/
+}
+ul li: first-child { /*se quiere q el primer hijo de ul*/
+background: orange;
+}
+
+a:hover {
+	background: gray;
+}
+
+a:active {
+	background: #333;/*se vuelva más oscuro*/
+	color:#fff; /*con letra blanca*/
+}
+ul li: first-child a{
+	color: white;
+}
+
+ul li: first-child a hover{ /*cuando se posiciones cambie la letra a negra*/
+	color: black;
+}
+
+ul li: first-child a active {
+
+}
